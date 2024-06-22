@@ -1,4 +1,4 @@
-# Stall Rental System
+# モバイル屋台貸出システム
 ![1000006205](https://github.com/hiroki-yod/ar-choco/assets/77391181/0269dfc4-12fd-4f61-86cf-5a2149698051)
 
 ## はじめに
