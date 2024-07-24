@@ -1,0 +1,16 @@
+{
+    "name": "stall-rental-system-dev-container",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/code",
+    "forwardPorts": [8080],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.debugpy",
+                "batisteo.vscode-django"
+            ]
+        }
+    }
+}

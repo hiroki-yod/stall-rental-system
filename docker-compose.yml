@@ -1,24 +1,22 @@
-version: '3.8'
-
 services:
   app:
+    container_name: stall-rental-system-app
     build: .
     tty: true
+    working_dir: /code
     env_file:
       - env/app.env
     volumes:
-      - .:/code
+      - ./code:/code
     ports:
-      - "8000:8000"
       - "8080:8080"
     expose:
-      - 8000
       - 8080
     depends_on:
       - db
-    # command: sh -c "python manage.py runserver 0.0.0.0:8000"
 
   db:
+    container_name: stall-rental-system-db
     image: postgres:16
     volumes:
       - data-volume:/var/lib/postgresql/data
