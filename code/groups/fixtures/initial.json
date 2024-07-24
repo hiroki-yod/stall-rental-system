@@ -1,0 +1,62 @@
+[
+    {
+        "model": "groups.group",
+        "pk": 1,
+        "fields": {
+            "name": "企業グループ",
+            "name_kana": "キギョウグループ",
+            "representative_name": "代表者1",
+            "representative_email": "rep1@example.com",
+            "representative_phone_number": "1234567890",
+            "group_type": "COMPANY",
+            "purpose": "企業の目的",
+            "activities": "企業の活動内容",
+            "members": [2, 3]
+        }
+    },
+    {
+        "model": "groups.group",
+        "pk": 2,
+        "fields": {
+            "name": "NPO法人グループ",
+            "name_kana": "エヌピーオーホウジングループ",
+            "representative_name": "代表者2",
+            "representative_email": "rep2@example.com",
+            "representative_phone_number": "1234567890",
+            "group_type": "NPO",
+            "purpose": "NPOの目的",
+            "activities": "NPOの活動内容",
+            "members": [2, 3]
+        }
+    },
+    {
+        "model": "groups.group",
+        "pk": 3,
+        "fields": {
+            "name": "ボランティア団体グループ",
+            "name_kana": "ボランティアダンタイグループ",
+            "representative_name": "代表者3",
+            "representative_email": "rep3@example.com",
+            "representative_phone_number": "1234567890",
+            "group_type": "VOLUNTARY",
+            "purpose": "ボランティアの目的",
+            "activities": "ボランティアの活動内容",
+            "members": [2, 3]
+        }
+    },
+    {
+        "model": "groups.group",
+        "pk": 4,
+        "fields": {
+            "name": "その他グループ",
+            "name_kana": "ソノタグループ",
+            "representative_name": "代表者4",
+            "representative_email": "rep4@example.com",
+            "representative_phone_number": "1234567890",
+            "group_type": "OTHER",
+            "purpose": "その他の目的",
+            "activities": "その他の活動内容",
+            "members": [2, 3]
+        }
+    }
+]
