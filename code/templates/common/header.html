@@ -8,7 +8,7 @@
             {% if request.user.is_authenticated %}
                 <form action="{% url "accounts:logout" %}" method="post" class="inline">
                     {% csrf_token %}
-                    <button type="submit" class="text-white bg-indigo-600 hover:bg-indigo-500 font-medium rounded-lg text-sm px-5 py-2.5 mr-2">ログアウト</button>
+                    {% include 'common/submit_button.html' with label='ログアウト' %}
                 </form>
             {% else %}
                 <a href="{% url "accounts:login" %}" class="text-gray-800 hover:bg-gray-50 font-medium rounded-lg text-sm px-5 py-2.5 mr-2">ログイン</a>
@@ -22,7 +22,7 @@
                 </li>
                 {% if request.user.is_authenticated %}
                     <li>
-                        <a href="/item" class="block text-gray-700 hover:text-indigo-600">団体一覧</a>
+                        <a href="{% url "groups:list" %}" class="block text-gray-700 hover:text-indigo-600">団体一覧</a>
                     </li>
                     <li>
                         <a href="/item" class="block text-gray-700 hover:text-indigo-600">予約履歴</a>
