@@ -1,0 +1,24 @@
+[
+    {
+        "model": "accounts.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "email": "admin@example.com",
+            "password": "pbkdf2_sha256$600000$nzdsP43Up45L0hUklLYpzW$iApbn2Jw6M2k5umlsg3qfz+85V2t6AfpeSQKch/gtpo=",
+            "is_staff": true,
+            "phone_number": "1234567890"
+        }
+    },
+    {
+        "model": "accounts.user",
+        "pk": 2,
+        "fields": {
+            "username": "user",
+            "email": "user@example.com",
+            "password": "pbkdf2_sha256$600000$AjjAa3nFZ1gPaghXoCMtJi$7jgesOmr3yS85v3eBqyaKBdkuNraGn0wz+BH/8Er0gc=",
+            "is_staff": false,
+            "phone_number": "0987654321"
+        }
+    }
+]
